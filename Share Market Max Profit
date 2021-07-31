@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,i,j,x,y;
+    printf("Enter the array length: ");
+    scanf("%d",&n);
+    int size[n];
+    printf("Enter the elements of the Array: ");
+
+    //Taking input values
+    for(i=0;i<n;i++)
+        {
+        scanf("%d",&size[i]);
+        }
+
+    //Considering size[0] index as the Max Number
+    int Max=size[0];
+    for(i=0;i<n;i++){
+        int profit=0;
+        for(j=i;j<n;j++){
+            profit=size[j] - size[i];  //Calculating Max Profit
+
+            if(profit>Max){   //Checking for Max profit
+                Max=profit;
+            }
+        }
+    }
+
+    printf("Maximum Profit = ");
+    printf("%d\n",Max);
+
+    return 0;
+}
