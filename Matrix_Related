@@ -1,1 +1,99 @@
+#include<stdio.h>
+int main()
+{
+
+//Part i.
+
+    int i, j, n;
+    printf("Enter an integer number: ");
+    scanf("%d",&n);
+    printf("The dimension of array is = %d:%d\n\n",n,n);
+
+    int A[n][n];
+    //Taking input the array values
+    for(i=0; i<n; i++) {
+      for(j=0;j<n;j++) {
+         printf("Enter the value for arr[%d][%d]:", i, j);
+         scanf("%d", &A[i][j]);
+      }
+       printf("\n");
+     }
+
+   //Printing array elements
+    printf("%d:%d Dimensional array elements:\n\n",n,n);
+    for(i=0; i<n; i++) {
+      for(j=0;j<n;j++) {
+         printf("\t%d",A[i][j]);
+      }
+      printf("\n\n");
+
+     }
+
+
+//Part ii.
+
+    int B[n][n];
+    //Store the value of A in B
+    for(i=0; i<n; i++) {
+      for(j=0;j<n;j++) {
+         B[i][j]=A[i][j];
+        }
+     }
+
+    //Store the value of B in temp & interchange
+    for (i = 0; i < n; ++i){
+    int temp = B[i][i];
+        B[i][i] = B[i][n - i - 1];
+        B[i][n - i - 1] = temp;
+        }
+
+     //Printing Interchange diagonal value
+     printf("Interchange diagonals of the matrix A:\n\n");
+     for (i = 0; i < n; ++i){
+        for (j = 0; j < n; ++j){
+            printf("\t%d",B[i][j]);
+           }
+            printf("\n\n");
+        }
+
+
+//Part iii.
+
+      int C[n][n];
+      // computing the transpose
+      for (i=0; i<n; i++)
+       for (j=0; j<n; j++){
+          C[j][i] = B[i][j];
+        }
+
+      // printing the transpose
+      printf("Transpose of the matrix B:\n\n");
+      for (i=0; i<n; i++){
+       for (j=0; j<n; j++){
+         printf("\t%d",C[i][j]);
+          if (j == n -1 )
+          printf("\n\n");
+      }
+     }
+
+
+//Part iv.
+
+    int D[n][n];
+    //Calculation of the operation 3A+2B-C
+    for(i=0; i<n; i++) {
+      for(j=0;j<n;j++) {
+        D[i][j] = 3*A[i][j] + 2*B[i][j] - C[i][j];
+      }
+    }
+    printf("The following operation 3A+2B-C:\n\n");
+    for(i=0; i<n; i++) {
+      for(j=0;j<n;j++) {
+        printf("\t%d",D[i][j]);
+      }
+      printf("\n\n");
+    }
+
+    return 0;
+}
 
