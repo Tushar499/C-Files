@@ -33,7 +33,7 @@ iv. Now do the following operation:
 3A + 2B – C
 
 Problem Description:
-Plating with String:
+Playing with String:
 
 Task 1: Signup System
 In the StringAssignment.c file there are two global arrays of String namely emailArr and passArr.
