@@ -31,3 +31,48 @@ iii. Then write a program in the same main function to get transpose of the matr
 transpose matrix is C.
 iv. Now do the following operation:
 3A + 2B – C
+
+Problem Description:
+Plating with String:
+
+Task 1: Signup System
+In the StringAssignment.c file there are two global arrays of String namely emailArr and passArr.
+Implement the function signupUser() that takes two String as input, one for user email and another for
+password. You need to do the following checks:
+1. Is the email in valid format?
+2. Does the password contain at least 8 characters?
+3. Does the password have both uppercase and lowercase letters?
+4. Does the password contain digits?
+5. Does the password contain any of the special characters ($ # * @)?
+If any of the checks returns false, the signup will not be successful. In that case you need to show proper
+error message, and return FAIL_VAL. Otherwise, the signup will be successful if all of these checks
+return true. In that case show success message, return the array index, and store the user email and the
+password into emailArr and passAarr respectively.
+N.B. You need to discard duplicate signup.
+
+Task 2: Login System
+Implement the function loginUser() that takes two String as input, one for user email and another for
+password. It will search for the given user email in emailArr. If the user email exists and the given
+password matches with the stored one against that email, then login will be successful and you should
+return the array index plus show a success message. Otherwise, login will be unsuccessful and you
+should return FAIL_VAL plus show a proper error message.
+
+Task 3:Build Profile
+In the StringAssignment.c file there are two more global arrays of String namely nameArr and
+addressArr. Implement the function buildUserProfile() that takes four String as input, one for user
+email, one for first name, one for last name, and another for the address. You need to do the following
+thing:
+1. Concatenate first and last name to a single name field, and store it into nameArr at the proper
+index.
+2. Store the address into addressArr at the proper index.
+3. If no user is found against the given email, show error message.
+
+Task 4: Search
+1. Implement the function searchByName() that takes one String input for name. You need to show
+the email, name, and address of those users found against that name.
+2. Implement the function searchByAddress() that takes one String input for address. You need to
+show the email, name, and address of those users found against that address.
+For both of these searches: the search should be case insensitive and allow substring properties. If search
+fails to find the data, show error message.
+
+Assignment designed by Md. Rafi-Ur-Rashid, Lecturer, CSE, UIU
