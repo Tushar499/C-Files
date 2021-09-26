@@ -75,4 +75,4 @@ show the email, name, and address of those users found against that address.
 For both of these searches: the search should be case insensitive and allow substring properties. If search
 fails to find the data, show error message.
 
-Assignment designed by Md. Rafi-Ur-Rashid, Lecturer, CSE, UIU
+Assignment designed by Md. Rafi-Ur-Rashid, Lecturer, CSE, UIU.
