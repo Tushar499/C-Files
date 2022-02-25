@@ -1,0 +1,3 @@
+https://beginnersbook.com/2014/01/c-strings-string-functions/
+https://codeforwin.org/2015/11/string-programming-exercises-and-solutions-in-c.html
+https://docs.google.com/document/d/1vDFI8rXU2h1VA1S7uGr8SKZJZEcbnLic/edit?usp=sharing&ouid=111111438337320722146&rtpof=true&sd=true

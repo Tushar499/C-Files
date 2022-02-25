@@ -1,0 +1,2 @@
+https://www.w3resource.com/c-programming-exercises/file-handling/
+https://codeforwin.org/2018/04/file-handling-programming-exercises-and-solutions-in-c.html
